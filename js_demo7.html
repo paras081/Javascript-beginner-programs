@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Js demo 6 | JS data types</title>
+	</head>
+
+	<body>
+
+	<p id="demo1"></p>
+
+	<script>
+		var $a=true;
+	//	a=2; //primitive number
+	//	a="paras"; //string
+		var Obj= new Array("a","b","c");
+	 	document.getElementById("demo1").innerHTML = 
+	 	typeof ""+ "<br>" + 
+	 	typeof "paras"+ "<br>" + 
+		typeof  3 + "<br>" + 
+		typeof  3.12 + "<br>" +
+		typeof  (3 + 2) + "<br>" +
+		typeof  ($a) + "<br>" +
+		typeof  function myFunction() {} + "<br>" +
+		typeof  Obj+ "<br>"
+		;
+	</script>
+
+	</body>
+
+</html>
