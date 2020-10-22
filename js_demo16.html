@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Js demo 14 | JS keypress event</title>   
+            
+	</head>
+	<body id="body1"> 
+        
+        <button id="myBtn">Try this</button>
+        
+        <p id="demo"></p>
+        
+         <script>
+            
+             document.getElementById('myBtn').addEventListener("click",displaydate);
+             document.getElementById('myBtn').addEventListener("mouseout",changebackground);
+             
+             
+             function displaydate(){
+                 document.getElementById('demo').innerHTML=Date();
+             }
+             
+             function changebackground(){
+                 document.getElementById('body1').style.backgroundColor='GREY';
+             }
+                 
+        </script>   
+	</body>
+</html>

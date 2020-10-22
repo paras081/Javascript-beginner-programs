@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Js demo 9 | prompt boxes</title>
+        
+	</head>
+
+	<body>
+   
+        
+        <p id="demo1"></p>
+    
+        <script>
+            var txtmsg;
+            var ans = prompt("Enter your name","paras"); 
+            
+            if(ans == null || ans == ""){
+                
+                //document.write("You pressed OK");
+                txtmsg="User must enter the name";
+               
+               }else{
+                txtmsg="Welcome "+ans+" !";
+               }
+                document.getElementById('demo1').innerHTML=txtmsg;
+        </script>
+	</body>
+
+</html>

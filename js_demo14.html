@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Js demo 14 | JS keypress event</title>   
+            
+	</head>
+	<body> 
+        <h2>Js demo 14 | JS keypress event</h2>
+        
+        <input type="text" id="password" onkeypress="keypressedoccur()">  
+    
+        <p id="errorMsg"></p>
+       
+         <script>
+            function keypressedoccur(){
+                  var x = document.getElementById('password').value;     
+                
+                    if(x.length < 6){
+                        document.getElementById('errorMsg').innerHTML="password is too small";
+                        document.getElementById('errorMsg').style.color= 'RED';
+                    }else{
+                        document.getElementById('errorMsg').innerHTML="password length is ok";
+                        document.getElementById('errorMsg').style.color='GREEN';
+                    }
+              
+            }
+        </script>   
+	</body>
+</html>

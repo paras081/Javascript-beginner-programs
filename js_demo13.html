@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Js demo 13 | JS forms with events</title>   
+         <script>
+            function validateformdata(){
+                 var x=document.forms['myForm']['fname'].value;
+                if(x == ''){
+                    alert("name must be filled !!!");
+                }else{
+                    document.getElementById('demo').innerHTML=x;
+                }
+            }
+        </script>       
+	</head>
+	<body> 
+        <h2>Javascript forms and events</h2>
+          <p id="demo"></p>
+        <form name="myForm" action="/js_demo13.html" onsubmit="validateformdata()" method="post">
+            Name:<input type="text" name="fname">
+            <input type="submit" value="Submit">
+        </form>  
+	</body>
+</html>
